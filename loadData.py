@@ -34,6 +34,6 @@ with driver.session() as session:
             CREATE (user)-[:ACTION {id: $action_id, feature0: $feature0, feature1: $feature1,
             feature2: $feature2, feature3: $feature3, label: $label}]->(target)
             """, user_id=row['USERID'], target_id=row['TARGETID'], action_id=row['ACTIONID'], feature0=row['FEATURE0'],
-                    feature1=row['FEATURE1'], feature2=row['FEATURE2'], feature4=row['FEATURE4'], label=row['LABEL'])
+                    feature1=row['FEATURE1'], feature2=row['FEATURE2'], feature3=row['FEATURE3'], label=row['LABEL'])
 
     driver.close()
